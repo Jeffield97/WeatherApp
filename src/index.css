@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.float {
+  animation: float-animation 2.5s infinite ease-in-out;
+}
+
+@keyframes float-animation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+}
+
+.gradient-radial {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#53388f 20%, #2f2958 70%);
+}
+
+@media (max-height: 200px) {
+  .gradient-radial {
+    min-height: calc(100% + 350px);
+  }
+}
