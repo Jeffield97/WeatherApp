@@ -31,7 +31,7 @@ const Card = () => {
 
   const getCity = async (lat, lon) => {
     const response = await fetch(
-      `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&appid=00ce3cbe5164b0438313a3f261362d8a`,
+      `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&appid=00ce3cbe5164b0438313a3f261362d8a`,
     );
     const data = await response.json();
     console.log(data[0]);
@@ -64,7 +64,7 @@ const Card = () => {
         <div>
           <img
             className="absolute w-4/12 top-12 right-0 z-10"
-            src={`https://openweathermap.org/img/wn/${weather?.current.weather[0].icon}@2x.png`}
+            src={`http://openweathermap.org/img/wn/${weather?.current.weather[0].icon}@2x.png`}
             // src={getLogo(weather?.current.weather[0].main)}
             alt=""
           />
