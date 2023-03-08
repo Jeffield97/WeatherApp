@@ -9,11 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
     "daisyui": "^2.51.3",
-=======
     "axios": "^1.3.4",
->>>>>>> 25319e681e30d747701675aa232629e058f42293
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
