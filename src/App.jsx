@@ -6,6 +6,7 @@ const App = () => {
   return (
     <div className="gradient-radial min-h-screen h-screen flex justify-start items-center flex-col">
       <Card></Card>
+      <p className='mt-3 font-light'>Developed by Jeffield</p>
     </div>
   );
 };

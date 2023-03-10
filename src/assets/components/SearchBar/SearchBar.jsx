@@ -22,7 +22,7 @@ const SearchBar = ({ setLat, setLon, getWeather }) => {
     searchBycity(e.target.cityName.value);
   };
   return (
-    <form className="form-control w-full max-w-xs mt-12 mx-auto" onSubmit={handleForm}>
+    <form className="form-control w-full max-w-xs mx-auto" onSubmit={handleForm}>
       <label className="label">
         <span className="label-text">Search by city</span>
       </label>
